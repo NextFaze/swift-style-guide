@@ -1,4 +1,4 @@
-# NextFaze Objective-C Style Guide
+# NextFaze Swift Style Guide
 
 This style guide outlines the coding conventions of the iOS teams at NextFaze. It is based on the [The Official raywenderlich.com Swift Style Guide](https://github.com/raywenderlich/swift-style-guide).
 
