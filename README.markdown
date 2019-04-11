@@ -303,7 +303,7 @@ if user.isHappy {
 }
 ```
 
-**Not Preferred**:
+**Preferred**:
 ```swift
 if user.isHappy
 {
@@ -315,6 +315,30 @@ else {
 ```
 
 * There should be exactly one blank line between methods to aid in visual clarity and organization. Whitespace within methods should separate functionality, but having too many sections in a method often means you should refactor into several methods.
+
+* There should be no blank lines after an opening brace or before a closing brace.
+
+* Colons always have no space on the left and one space on the right. Exceptions are the ternary operator `? :`, empty dictionary `[:]` and `#selector` syntax `addTarget(_:action:)`.
+
+**Preferred**:
+```swift
+class TestDatabase: Database {
+  var data: [String: CGFloat] = ["A": 1.2, "B": 3.2]
+}
+```
+
+**Not Preferred**:
+```swift
+class TestDatabase : Database {
+  var data :[String:CGFloat] = ["A" : 1.2, "B":3.2]
+}
+```
+
+* Long lines should be wrapped at around 70 characters. A hard limit is intentionally not specified.
+
+* Avoid trailing whitespaces at the ends of lines.
+
+* Add a single newline character at the end of each file.
 
 * There should be no blank lines after an opening brace or before a closing brace.
 
@@ -916,11 +940,12 @@ func computeFFT(context: Context?, inputData: InputData?) throws -> Frequencies 
 
   // use context and input to compute the frequencies
   return frequencies
-}
-```
-
 **Not Preferred**:
 ```swift
+}
+// do something with numbers
+```
+
 func computeFFT(context: Context?, inputData: InputData?) throws -> Frequencies {
 
   if let context = context {
