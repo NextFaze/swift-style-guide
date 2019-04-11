@@ -1,4 +1,4 @@
-# NextFaze Objective-C Style Guide
+# NextFaze ~~Objective-C~~ Swift Style Guide
 
 This style guide outlines the coding conventions of the iOS teams at NextFaze. It is based on the [The Official raywenderlich.com Swift Style Guide](https://github.com/raywenderlich/swift-style-guide).
 
@@ -1083,9 +1083,7 @@ Do not use emoji in your projects. For those readers who actually type in their 
 
 ## Organization and Bundle Identifier
 
-Where an Xcode project is involved, the organization should be set to `Ray Wenderlich` and the Bundle Identifier set to `com.razeware.TutorialName` where `TutorialName` is the name of the tutorial project.
-
-![Xcode Project settings](screens/project_settings.png)
+Where an Xcode project is involved, the organization should be set to `ClientName` and the Bundle Identifier set to `com.clientName.ProjectName` where `ProjectName` is the name of the tutorial project.
 
 ## Copyright Statement
 
